@@ -6,20 +6,22 @@ main.tf — The infrastructure code. As this file grows, consider breaking it up
 variables.tf — This almost always has, at minimum, a region and environment variable set.
 
 
-Initializing Terraform
-The following will initialize the local terraform configuration without
+The following will initialize the local [terraform][tfhome] configuration without
 creating a bucket for storing state data.
 
+```sh
 terraform init
+```
 
-Running Terraform
-Run the following to ensure terraform will only perform the expected
+
+### Running Terraform
+
+Run the following to ensure ***terraform*** will only perform the expected
 actions:
 
 ```sh
 terraform plan
 ```
-
 
 Run the following to apply the configuration to the target Google Cloud
 environment:
@@ -28,16 +30,12 @@ environment:
 terraform apply
 ```
 
+### Tearing Down the Terraformed Cluster
 
-
-Tearing Down the Terraformed Cluster
-Run the following to verify that terraform will only impact the expected
+Run the following to verify that ***terraform*** will only impact the expected
 nodes and then tear down the cluster.
 
+```sh
 terraform plan
 terraform destroy
-
-
-```sh
-terraform apply
 ```
