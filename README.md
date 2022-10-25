@@ -16,13 +16,17 @@ Running Terraform
 Run the following to ensure terraform will only perform the expected
 actions:
 
+```sh
 terraform plan
+```
 
 
 Run the following to apply the configuration to the target Google Cloud
 environment:
 
+```sh
 terraform apply
+```
 
 
 
