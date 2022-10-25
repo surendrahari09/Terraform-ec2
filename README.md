@@ -8,6 +8,8 @@
 [![GitHub tag](https://img.shields.io/github/tag/tmknom/template-terraform-module.svg)](https://registry.terraform.io/modules/tmknom/name/provider)
 [![License](https://img.shields.io/github/license/tmknom/template-terraform-module.svg)](https://opensource.org/licenses/Apache-2.0)The following files are expected to be found:
 
+<img alt="Terraform" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
+
 terraform.tf — Contains the terraform {} configuration block. This will set a minimum terraform version and configure the backend.
 providers.tf — Contains the provider {} blocks indicating the version of each provider needed.
 main.tf — The infrastructure code. As this file grows, consider breaking it up into smaller, well-named files. For example, a circleci.tf file could contain the IAM user, group, and policies needed for a CircleCI build to run.
