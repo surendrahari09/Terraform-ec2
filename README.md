@@ -32,3 +32,8 @@ nodes and then tear down the cluster.
 
 terraform plan
 terraform destroy
+
+
+```sh
+terraform apply
+```
